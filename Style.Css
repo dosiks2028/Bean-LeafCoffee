@@ -1,0 +1,45 @@
+.features {
+  padding: 24px 16px;
+  text-align: center;
+}
+.features-title {
+  font-size: 1.5rem;
+  margin-bottom: 16px;
+}
+.features-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+.feature {
+  background: #f3e9dc;
+  padding: 16px;
+  border-radius: 8px;
+}
+
+/* Tablet: 2 per row, bigger heading, more spacing */
+@media (min-width: 768px) {
+  .features {
+    padding: 48px 32px;
+  }
+  .features-title {
+    font-size: 2rem;
+    margin-bottom: 24px;
+  }
+  .features-list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+/* Laptop: 4 per row, left-aligned text */
+@media (min-width: 1200px) {
+  .features {
+    padding: 64px 80px;
+    text-align: left;
+  }
+  .features-list {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+  }
+}
